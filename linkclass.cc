@@ -10,7 +10,7 @@
 #include "constants.h"
 #include "indexing.h"
 #include "stapleclass.h"
-
+#include <cmath>
 
 link::link() {
 	link::_value = NULL;
@@ -49,16 +49,35 @@ void link::setvalue(double val) {
 	*link::_value = val;
 }
 
+double link::getplaqsum(){
+	double plaqsum = 0;
+	double val = *link::_value;			//deref here so it only has to be done once
+	for (int i=0;i<4;i++){
+		plaqsum += std::cos(link::_staples[i].getvalue()+val);
+		}
+	return plaqsum;
+	}
+
+
 double link::getaction(double linkval) {
 	double action = 0;
 	for (int i=0;i<4;i++){
-		action += - std::cos(link::_staples[i].getvalue()+*link::_value); //action takes the minus value S=\sum_p 1-Re(U_p)
+		action += - std::cos(link::_staples[i].getvalue()+linkval); //action takes the minus value S=\sum_p 1-Re(U_p)
 	}
 	return action;
 }
 
-void link::update(double newval) {		//attempt to update the link value to 'newval'
-		;
+void link::update(double phase,double uniformrand) {		//attempt to update the link value to 'newval'
+		double newvalue = phase + *link::_value;
+		double actionprime = link::getaction(newvalue);
+		double action = link::getaction(*link::_value);
+		if (actionprime > action){											//if new action greater than old
+			if (std::exp(-beta*(actionprime - action)) >= uniformrand){			//accept with prob exp(-beta(S'-S))
+				*link::_value = newvalue;										//accept the change
+			}
+		} else {
+			*link::_value = newvalue;										//else always accept
+		  }
 	}
 
 void link::setstaples(double _lattice[n],std::array<int, 4> _index) {

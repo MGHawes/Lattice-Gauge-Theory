@@ -43,8 +43,8 @@ double **staple::getvalues(){		//double derefernce, pointer to array of pointers
 
 double staple::getvalue() {
 	if (staple::dir == 1) {
-		return *staple::_links[0] - *staple::_links[0] - *staple::_links[2];	//deref each of the three pointers to get staple
-	} else {return *staple::_links[2] - *staple::_links[0] - *staple::_links[2]; }
+		return *staple::_links[0] - *staple::_links[1] - *staple::_links[2];	//deref each of the three pointers to get staple
+	} else {return *staple::_links[2] - *staple::_links[0] - *staple::_links[1]; }
 }
 
 

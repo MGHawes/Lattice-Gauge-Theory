@@ -6,7 +6,7 @@
 #include "linkclass.h"
 
 
-int latticetest()
+void latticetest()
 {
   	double latticedata[n];
 

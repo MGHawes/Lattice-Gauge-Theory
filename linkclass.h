@@ -26,6 +26,8 @@ public:
 
 	double getvalue();
 
+	double getplaqsum();
+
 	void getstaples();
 
 	void getstaplessilent();
@@ -34,7 +36,7 @@ public:
 
 	double getaction(double linkval);
 
-	void update(double val);
+	void update(double phase,double uniformrand);
 
 	void setstaples(double _lattice[n],std::array<int, 4> _index);
 };
