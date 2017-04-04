@@ -4,13 +4,22 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 CC_SRCS += \
-../main.cc 
+../indexing.cc \
+../linkclass.cc \
+../main.cc \
+../stapleclass.cc 
 
 CC_DEPS += \
-./main.d 
+./indexing.d \
+./linkclass.d \
+./main.d \
+./stapleclass.d 
 
 OBJS += \
-./main.o 
+./indexing.o \
+./linkclass.o \
+./main.o \
+./stapleclass.o 
 
 
 # Each subdirectory must supply rules for building sources it contributes

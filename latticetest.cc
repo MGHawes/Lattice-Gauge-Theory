@@ -1,10 +1,3 @@
-/*
- * main.cc
- *
- *  Created on: 4 Apr 2017
- *      Author: John
- */
-
 #include <iostream>
 #include <array>
 #include <string>
@@ -13,7 +6,7 @@
 #include "linkclass.h"
 
 
-int main()
+int latticetest()
 {
   	double latticedata[n];
 
@@ -50,15 +43,34 @@ int main()
   	  			}
   	  		}
   	}
+  	std::string in = "";
+  	int mu,x,y,t;
+  	while (in != "halt"){
+  		std::cout << "Command(link,plaq):";
+  		std::cin >> in;
+  		if (in == "link"){
+  			std::cout << "index(mu x y t):";
+  			std::cin >> mu >> x >> y >> t;
+  			std::array<int, 4> d = {mu,x,y,t};
+  			std::cout<<lattice[getindex(d)].getvalue()<<std::endl;
+  			} else{ if (in == "plaq"){
+  				std::cout << "index(mu x y t):";
+  				std::cin >> mu >> x >> y >> t;
+  				std::array<int, 4> d = {mu,x,y,t};
+  				lattice[getindex(d)].getstaples();
+  					}
+  				else{ if (in=="loop") {
+  					for (int j=0;j<100000;j++){
+  					for (int i=0;i<n;i++){
+  					lattice[i].getstaplessilent();
+  					}
+  						}
+  				}
 
-  	for(int i=0;i<n;i++) {
-  	  	lattice[i].update(0.1);
+  					}
+  			}
+  		}
+
   	}
-
-
-  	}
-
-
-
 
 
