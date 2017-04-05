@@ -11,4 +11,6 @@
 
 int getindex(std::array<int, 4> _index);
 
+int getplaqindex(std::array<int, 2> _wallindex);
+
 #endif /* INDEXING_H_ */

@@ -1,5 +1,5 @@
 main.o: ../main.cc ../constants.h ../indexing.h ../linkclass.h \
- ../stapleclass.h
+ ../stapleclass.h ../wallclass.h ../plaqclass.h
 
 ../constants.h:
 
@@ -8,3 +8,7 @@ main.o: ../main.cc ../constants.h ../indexing.h ../linkclass.h \
 ../linkclass.h:
 
 ../stapleclass.h:
+
+../wallclass.h:
+
+../plaqclass.h:

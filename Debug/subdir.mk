@@ -8,21 +8,30 @@ CC_SRCS += \
 ../latticetest.cc \
 ../linkclass.cc \
 ../main.cc \
-../stapleclass.cc 
+../phasesgen.cc \
+../plaqclass.cc \
+../stapleclass.cc \
+../wallclass.cc 
 
 CC_DEPS += \
 ./indexing.d \
 ./latticetest.d \
 ./linkclass.d \
 ./main.d \
-./stapleclass.d 
+./phasesgen.d \
+./plaqclass.d \
+./stapleclass.d \
+./wallclass.d 
 
 OBJS += \
 ./indexing.o \
 ./latticetest.o \
 ./linkclass.o \
 ./main.o \
-./stapleclass.o 
+./phasesgen.o \
+./plaqclass.o \
+./stapleclass.o \
+./wallclass.o 
 
 
 # Each subdirectory must supply rules for building sources it contributes
