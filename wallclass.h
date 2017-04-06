@@ -23,7 +23,7 @@ public:
 
 	void inittwall(double _lattice[n], int t);
 
-	std::pair<double, double> getvalue();
+	std::pair<double, double> getvalues();
 
 	void getplaqvals(int x,int y);
 };

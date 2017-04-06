@@ -30,7 +30,7 @@ void twall::inittwall(double _lattice[n], int t){
 	}
 }
 
-std::pair<double, double> twall::getvalue(){
+std::pair<double, double> twall::getvalues(){			//returns re/im pair of correlators for m0++ and m0-- mass calculations
 	double revalue = 0;
 	double imvalue = 0;
 	std::pair<double, double> valuepair;
