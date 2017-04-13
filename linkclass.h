@@ -36,7 +36,7 @@ public:
 
 	double getaction(double linkval);
 
-	void update(double phase,double uniformrand);
+	int update(double phase,double uniformrand);
 
 	void setstaples(double _lattice[n],std::array<int, 4> _index);
 };

@@ -26,8 +26,8 @@ const double mean = 0;
 const double var = 0.75;
 const int N_v = 200;
 
-const int N_equilib = 2000;
-const int N_subseq = 500;
+const int N_equilib = 4000;
+const int N_subseq = 1000;
 const int N_seq = 10;
 const double avgplaqconst = 0.830;
 

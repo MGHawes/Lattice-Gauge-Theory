@@ -6,6 +6,8 @@
  */
 
 #include <iostream>
+#include <sstream>
+#include <fstream>
 #include <array>
 #include <string>
 #include "constants.h"
@@ -23,6 +25,15 @@
   	twall twallarray[n_t];
 
 int main(){
+
+	std::string fname;
+	std::stringstream fnamestream;
+	std::ofstream outfile;
+
+	fnamestream << "lgt"<< n_x << n_y << n_t << N_equilib << N_subseq<< ".txt";
+	fname = fnamestream.str();
+
+	outfile.open(fname);
 
 	std::time_t now = time(0);
   	for (int i=0; i<n; i++){
@@ -87,18 +98,26 @@ int main(){
     std::mt19937 intgen(std::time(0));
     std::uniform_int_distribution<int> intdistr(0,2*N_v);
 
+    int acceptances = 0;
+    int tries = 0;
+
     for (int j=1;j<=N_equilib;j++){
 		for(int i=0;i<n;i++) {
-			lattice[i].update(phases[intdistr(intgen)],uniformdistr(ugen));
+			acceptances += lattice[i].update(phases[intdistr(intgen)],uniformdistr(ugen));
+			tries += 1;
 		}
 		if (j % 100 == 0){
 			std::cout<<j<<std::endl;
+			std::cout << "Acceptances: "<<acceptances<<"/"<<tries<< std::endl;
+			acceptances = 0;
+			tries = 0;
 		}
     }
 
     std::time_t after = time(0);
 
     std::cout <<"Equilibriated:"<< after - now << std::endl;
+    outfile <<"Equilibriated:"<< after - now << std::endl;
     std::time_t now2 = time(0);
 
 
@@ -111,6 +130,8 @@ int main(){
 		double avgplaqsum = 0;
 		double rewallseqavg[n_t-1];
 		double imwallseqavg[n_t-1];
+		acceptances = 0;
+		tries = 0;
 		std::fill_n(rewallseqavg, n_t-1, 0);
 		std::fill_n(imwallseqavg, n_t-1, 0);
 
@@ -123,7 +144,8 @@ int main(){
 
 			//----------update links--------------
 			for(int i=0;i<n;i++) {
-				lattice[i].update(phases[intdistr(intgen)],uniformdistr(ugen));
+				acceptances += lattice[i].update(phases[intdistr(intgen)],uniformdistr(ugen));
+				tries += 1;
 			}
 
 			//----------do operations-------------
@@ -131,44 +153,54 @@ int main(){
 				sumplaq += lattice[i].getplaqsum();			//add to total sum the sum of plaqs surrounding this link
 			}
 
-			double t0rewallavg,t0imwallavg;
-			std::pair<double, double> rtnpair = twallarray[0].getvalues();
-			t0rewallavg = rtnpair.first;
-			t0imwallavg = rtnpair.second;
-
-			std::pair<double, double> looppair;
-
-			for(int t=1;t<n_t;t++){
-				looppair = twallarray[t].getvalues();
-				rewallseqavg[t-1] += looppair.first * t0rewallavg;
-				imwallseqavg[t-1] += looppair.second * t0imwallavg;
+			;
+			std::pair<double, double> Tpair;
+			std::pair<double, double> tpair;
+			for (int T=0;T<n_t;T++){
+				Tpair = twallarray[T].getvalues();
+				for(int t=0;t<n_t;t++){
+					tpair = twallarray[(t+T)%n_t].getvalues();
+					rewallseqavg[t] += tpair.first * Tpair.first;
+					imwallseqavg[t] += tpair.second * Tpair.second;
+				}
 			}
 
 			avgplaqsum += sumplaq/(N_plaq * 4);		//divide the sum of all plaqs in the lattice by the number of plaqs and inc the sequence avg
 
 		}
 
-		for(int i=0;i<n_t-1;i++){
-			rewallseqavg[i] = rewallseqavg[i]/N_subseq;
-			imwallseqavg[i] = imwallseqavg[i]/N_subseq;
+		for(int i=0;i<n_t;i++){
+			rewallseqavg[i] = rewallseqavg[i]/(N_subseq*n_t);
+			imwallseqavg[i] = imwallseqavg[i]/(N_subseq*n_t);
 		}
 
 		std::cout<<"m_0++ seq"<<k<<":";
 		std::cout<< std::endl;
-		for(int i=0;i<n_t-1;i++){
+		outfile<<"m_0++ seq"<<k<<":";
+		outfile<< std::endl;
+		for(int i=0;i<n_t;i++){
 			std::cout << rewallseqavg[i]<<", ";
+			outfile << rewallseqavg[i]<<", ";
 		}
 		std::cout<< std::endl;
+		outfile<< std::endl;
 
 		std::cout<<"m_0-- seq"<<k<<":";
 		std::cout<< std::endl;
-		for(int i=0;i<n_t-1;i++){
+		outfile<<"m_0-- seq"<<k<<":";
+		outfile<< std::endl;
+		for(int i=0;i<n_t;i++){
 			std::cout << imwallseqavg[i]<<", ";
+			outfile << imwallseqavg[i]<<", ";
 		}
-		std::cout<< std::endl;
+		outfile<< std::endl;
+		std::cout << std::endl;
 
 		avgplaqarray[k] = avgplaqsum/N_subseq;
-		std::cout <<"Plaqavg:" << avgplaqarray[k] << std::endl;
+		std::cout<<"Plaqavg:" << avgplaqarray[k] << std::endl;
+		std::cout << "Acceptances: "<<acceptances<<"/"<<tries<< std::endl;
+		outfile<<"Plaqavg:" <<std::endl;
+		outfile<< avgplaqarray[k] << std::endl;
 	}
 
         double plaqavg = 0;
@@ -185,6 +217,11 @@ int main(){
     std::cout <<"avgplaq:"<<plaqavg<<std::endl;
     std::cout <<"plaqsd:"<<plaqsd<<std::endl;
     std::cout <<"completed in:"<< after2 - now2 << std::endl;
+
+   	outfile <<"avgplaq:"<<plaqavg<<std::endl;
+   	outfile <<"plaqsd:"<<plaqsd<<std::endl;
+   	outfile <<"completed in:"<< after2 - now2 << std::endl;
+   	outfile.close();
   	}
 
 

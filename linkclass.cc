@@ -67,16 +67,20 @@ double link::getaction(double linkval) {
 	return action;
 }
 
-void link::update(double phase,double uniformrand) {		//attempt to update the link value to 'newval'
+int link::update(double phase,double uniformrand) {		//attempt to update the link value to 'newval'
 		double newvalue = phase + *link::_value;
 		double actionprime = link::getaction(newvalue);
 		double action = link::getaction(*link::_value);
 		if (actionprime > action){											//if new action greater than old
 			if (std::exp(-beta*(actionprime - action)) >= uniformrand){			//accept with prob exp(-beta(S'-S))
 				*link::_value = newvalue;										//accept the change
+				return 1;
+			} else{
+			return 0;
 			}
 		} else {
 			*link::_value = newvalue;										//else always accept
+			return 1;
 		  }
 	}
 
