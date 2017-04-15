@@ -42,7 +42,7 @@ std::pair<double, double> plaq::getvalues(){
 	double replaq = 0;
 	double implaq = 0;
 	double phaseloop = *plaq::_links[0] + *plaq::_links[1] - *plaq::_links[2] - *plaq::_links[3];
-	replaq =  std::cos(phaseloop)-avgplaqconst;
+	replaq =  std::cos(phaseloop);
 	implaq =  std::sin(phaseloop);
 
 	return std::make_pair(replaq, implaq);

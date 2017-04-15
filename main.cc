@@ -156,11 +156,20 @@ int main(){
 			;
 			std::pair<double, double> Tpair;
 			std::pair<double, double> tpair;
+
+			double xyplaqavgsum = 0;
+			for (int t=0;t<n_t;t++){
+				tpair = twallarray[t].getvalues();
+				xyplaqavgsum += tpair.first;
+			}
+			xyplaqavgsum = xyplaqavgsum/n_t;
+
 			for (int T=0;T<n_t;T++){
 				Tpair = twallarray[T].getvalues();
+				Tpair.first = Tpair.first - xyplaqavgsum;
 				for(int t=0;t<n_t;t++){
 					tpair = twallarray[(t+T)%n_t].getvalues();
-					rewallseqavg[t] += tpair.first * Tpair.first;
+					rewallseqavg[t] += (tpair.first-xyplaqavgsum) * Tpair.first;
 					imwallseqavg[t] += tpair.second * Tpair.second;
 				}
 			}
