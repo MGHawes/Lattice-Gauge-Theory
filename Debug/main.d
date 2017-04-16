@@ -1,5 +1,5 @@
 main.o: ../main.cc ../constants.h ../indexing.h ../linkclass.h \
- ../stapleclass.h ../wallclass.h ../plaqclass.h
+ ../stapleclass.h ../wallclass.h ../plaqclass.h ../wilsonwall.h ../loop.h
 
 ../constants.h:
 
@@ -12,3 +12,7 @@ main.o: ../main.cc ../constants.h ../indexing.h ../linkclass.h \
 ../wallclass.h:
 
 ../plaqclass.h:
+
+../wilsonwall.h:
+
+../loop.h:

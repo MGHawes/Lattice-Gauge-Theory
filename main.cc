@@ -18,11 +18,12 @@
 #include "wallclass.h"
 #include <utility>
 #include <algorithm>
-
+#include "wilsonwall.h"
 
   	double latticedata[n];
   	link lattice[n];
   	twall twallarray[n_t];
+  	wilsonwall wwallarray[n_t];
 
 int main(){
 
@@ -30,7 +31,7 @@ int main(){
 	std::stringstream fnamestream;
 	std::ofstream outfile;
 
-	fnamestream << "lgt"<< n_x << n_y << n_t << N_equilib << N_subseq<< ".txt";
+	fnamestream << "lgt"<< n_x << n_y << n_t << N_equilib << N_subseq<<beta<<".txt";
 	fname = fnamestream.str();
 
 	outfile.open(fname);
@@ -72,7 +73,9 @@ int main(){
   	//prepare walls
 	for (int t=0;t<n_t;t++){
 		twallarray[t].inittwall(latticedata,t);
+		wwallarray[t].initwwall(latticedata,t);
 	}
+
 
 
     //initialise gaussian phases set
@@ -101,13 +104,19 @@ int main(){
     int acceptances = 0;
     int tries = 0;
 
+    std::time_t equilibnow = time(0);
+    std::time_t equilibafter = time(0);
     for (int j=1;j<=N_equilib;j++){
 		for(int i=0;i<n;i++) {
 			acceptances += lattice[i].update(phases[intdistr(intgen)],uniformdistr(ugen));
 			tries += 1;
 		}
-		if (j % 100 == 0){
+		if (j % N_updatesperstatus == 0){
 			std::cout<<j<<std::endl;
+			equilibafter = time(0);
+			double eta = double(equilibafter - equilibnow)*(N_subseq*N_seq + (N_equilib - j))/double(N_updatesperstatus*60);
+			equilibnow = time(0);
+			std::cout << "eta: "<< eta << " mins" <<std::endl;
 			std::cout << "Acceptances: "<<acceptances<<"/"<<tries<< std::endl;
 			acceptances = 0;
 			tries = 0;
@@ -118,22 +127,26 @@ int main(){
 
     std::cout <<"Equilibriated:"<< after - now << std::endl;
     outfile <<"Equilibriated:"<< after - now << std::endl;
+    double eta = (after - now)*(N_subseq*N_seq)/(N_equilib*60);
+    std::cout <<"eta: "<< eta << " mins" <<std::endl;
     std::time_t now2 = time(0);
 
 
     double avgplaqarray[N_seq];
 //    double avgrewall[N_seq][n_t-1];			//store each t array in a particular sequence row
 //    double avgimwall[N_seq][n_t-1];
-
+    equilibnow = time(0);
 	for (int k=1;k<=N_seq;k++){
 		//inside a single sequence of field configs
 		double avgplaqsum = 0;
-		double rewallseqavg[n_t-1];
-		double imwallseqavg[n_t-1];
+		double rewallseqavg[n_t];
+		double imwallseqavg[n_t];
+		double wwallseqavg[n_t];
 		acceptances = 0;
 		tries = 0;
-		std::fill_n(rewallseqavg, n_t-1, 0);
-		std::fill_n(imwallseqavg, n_t-1, 0);
+		std::fill_n(rewallseqavg, n_t, 0);
+		std::fill_n(imwallseqavg, n_t, 0);
+		std::fill_n(wwallseqavg, n_t, 0);
 
 		for (int j=1;j<=N_subseq;j++){
 		//inside a single field config
@@ -156,6 +169,8 @@ int main(){
 			;
 			std::pair<double, double> Tpair;
 			std::pair<double, double> tpair;
+			std::pair<double, double> Wpair;
+			std::pair<double, double> wpair;
 
 			double xyplaqavgsum = 0;
 			for (int t=0;t<n_t;t++){
@@ -165,12 +180,15 @@ int main(){
 			xyplaqavgsum = xyplaqavgsum/n_t;
 
 			for (int T=0;T<n_t;T++){
+				Wpair = wwallarray[T].getvalues();
 				Tpair = twallarray[T].getvalues();
 				Tpair.first = Tpair.first - xyplaqavgsum;
 				for(int t=0;t<n_t;t++){
 					tpair = twallarray[(t+T)%n_t].getvalues();
+					wpair = wwallarray[(t+T)%n_t].getvalues();
 					rewallseqavg[t] += (tpair.first-xyplaqavgsum) * Tpair.first;
 					imwallseqavg[t] += tpair.second * Tpair.second;
+					wwallseqavg[t] += wpair.first * Wpair.first + wpair.second * Wpair.second;
 				}
 			}
 
@@ -181,6 +199,7 @@ int main(){
 		for(int i=0;i<n_t;i++){
 			rewallseqavg[i] = rewallseqavg[i]/(N_subseq*n_t);
 			imwallseqavg[i] = imwallseqavg[i]/(N_subseq*n_t);
+			wwallseqavg[i] = wwallseqavg[i]/(N_subseq*n_t);
 		}
 
 		std::cout<<"m_0++ seq"<<k<<":";
@@ -205,11 +224,27 @@ int main(){
 		outfile<< std::endl;
 		std::cout << std::endl;
 
+		std::cout<<"wilson seq"<<k<<":";
+		std::cout<< std::endl;
+		outfile<<"wilson seq"<<k<<":";
+		outfile<< std::endl;
+		for(int i=0;i<n_t;i++){
+			std::cout << wwallseqavg[i]<<", ";
+			outfile << wwallseqavg[i]<<", ";
+		}
+		outfile<< std::endl;
+		std::cout << std::endl;
+
 		avgplaqarray[k] = avgplaqsum/N_subseq;
 		std::cout<<"Plaqavg:" << avgplaqarray[k] << std::endl;
 		std::cout << "Acceptances: "<<acceptances<<"/"<<tries<< std::endl;
 		outfile<<"Plaqavg:" <<std::endl;
 		outfile<< avgplaqarray[k] << std::endl;
+
+		equilibafter = time(0);
+		double eta = double(equilibafter - equilibnow)*(N_seq-k)/double(60);
+		equilibnow = time(0);
+		std::cout << "eta: "<< eta << " mins" <<std::endl;
 	}
 
         double plaqavg = 0;

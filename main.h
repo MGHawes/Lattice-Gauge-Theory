@@ -14,7 +14,7 @@
 #include "constants.h"
 #include "indexing.h"
 #include "linkclass.h"
-
+#include "wilsonwall.h"
 
 int main();
 
