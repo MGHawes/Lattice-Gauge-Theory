@@ -7,22 +7,40 @@ CC_SRCS += \
 ../indexing.cc \
 ../latticetest.cc \
 ../linkclass.cc \
+../loop.cc \
 ../main.cc \
-../stapleclass.cc 
+../phasesgen.cc \
+../plaqclass.cc \
+../setup.cc \
+../stapleclass.cc \
+../wallclass.cc \
+../wilsonwall.cc 
 
 CC_DEPS += \
 ./indexing.d \
 ./latticetest.d \
 ./linkclass.d \
+./loop.d \
 ./main.d \
-./stapleclass.d 
+./phasesgen.d \
+./plaqclass.d \
+./setup.d \
+./stapleclass.d \
+./wallclass.d \
+./wilsonwall.d 
 
 OBJS += \
 ./indexing.o \
 ./latticetest.o \
 ./linkclass.o \
+./loop.o \
 ./main.o \
-./stapleclass.o 
+./phasesgen.o \
+./plaqclass.o \
+./setup.o \
+./stapleclass.o \
+./wallclass.o \
+./wilsonwall.o 
 
 
 # Each subdirectory must supply rules for building sources it contributes

@@ -43,7 +43,7 @@
 			"file": "q4description.tex",
 			"settings":
 			{
-				"buffer_size": 1677,
+				"buffer_size": 20760,
 				"line_ending": "Windows"
 			}
 		}
@@ -89,8 +89,35 @@
 	},
 	"file_history":
 	[
-		"/C/Users/Matthew/git/lgt/Debug/lgt10101040001000.txt",
+		"/C/Users/Matthew/git/beta2p3/282840/lgt28284020000100002p3.txt",
+		"/C/Users/Matthew/git/beta2p3/282840/lgt28284020000100002.3x5.txt",
+		"/C/Users/Matthew/git/beta2p0/222236/lgt28284020000100002.3x5.txt",
+		"/C/Users/Matthew/git/beta2p0/222236/lgt22223620000100002p0.txt",
+		"/C/Users/Matthew/git/beta2p3/222236/lgt22223620000100002.3x5.txt",
+		"/C/Users/Matthew/git/beta2p3/222236/lgt22223620000100002p3.txt",
+		"/C/Users/Matthew/git/beta2p2/222236/lgt22223620000100002.2x5.txt",
+		"/C/Users/Matthew/git/beta2p2/222236/lgt22223620000100002p2.txt",
 		"/C/Users/Matthew/git/lgt/dataprocess.py",
+		"/C/Users/Matthew/git/beta2p3/282840/lgt28284020000100002.3x4.txt",
+		"/C/Users/Matthew/git/beta2p3/282840/lgt28284020000100002.3x3.txt",
+		"/C/Users/Matthew/git/beta2p3/282840/lgt28284020000100002.3x2.txt",
+		"/C/Users/Matthew/git/beta2p3/282840/lgt28284020000100002.3x1.txt",
+		"/C/Users/Matthew/git/beta2p3/222236/lgt22223620000100002.3x4.txt",
+		"/C/Users/Matthew/git/beta2p3/222236/lgt22223620000100002.3x3.txt",
+		"/C/Users/Matthew/git/beta2p3/222236/lgt22223620000100002.3x2.txt",
+		"/C/Users/Matthew/git/beta2p3/222236/lgt22223620000100002.3x1.txt",
+		"/C/Users/Matthew/git/beta2p2/282840/lgt28284020000100002p2.txt",
+		"/C/Users/Matthew/git/beta2p2/282840/lgt28284020000100002.2x5.txt",
+		"/C/Users/Matthew/git/beta2p2/282840/lgt28284020000100002.2x4.txt",
+		"/C/Users/Matthew/git/beta2p2/282840/lgt28284020000100002.2x3.txt",
+		"/C/Users/Matthew/git/beta2p2/282840/lgt28284020000100002.2x2.txt",
+		"/C/Users/Matthew/git/beta2p2/282840/lgt28284020000100002.2x1.txt",
+		"/C/Users/Matthew/git/beta2p2/222236/lgt22223620000100002.2x4.txt",
+		"/C/Users/Matthew/git/beta2p2/222236/lgt22223620000100002.2x3.txt",
+		"/C/Users/Matthew/git/beta2p2/222236/lgt22223620000100002.2x2.txt",
+		"/C/Users/Matthew/git/beta2p2/222236/lgt22223620000100002.2x1.txt",
+		"/C/Users/Matthew/git/lgt/Debug/lgt28284020000100002p2.txt",
+		"/C/Users/Matthew/git/lgt/Debug/lgt10101040001000.txt",
 		"/C/Users/Matthew/git/lgt/Debug/lgt28284040001000.txt",
 		"/D/My Documents/Networks/Project/projectcompare.py",
 		"/D/My Documents/Networks/Project/Projectv6.tex",
@@ -144,9 +171,15 @@
 	},
 	"find_state":
 	{
-		"case_sensitive": false,
+		"case_sensitive": true,
 		"find_history":
 		[
+			"C\\+\\+",
+			",",
+			"m_0\\+\\+",
+			"D\\$",
+			"6",
+			".}",
 			"matme",
 			"reduce",
 			"reduced",
@@ -230,23 +263,25 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1677,
+						"buffer_size": 20760,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								93,
-								93
+								19733,
+								19733
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/LaTeX/LaTeX.sublime-syntax"
+							"syntax": "Packages/LaTeX/LaTeX.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 4515.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -334,7 +369,7 @@
 		[
 			[
 				"",
-				"D:\\My Documents\\Networks\\networks.sublime-project"
+				"C:\\Users\\Matthew\\git\\lgt\\lgt.sublime-project"
 			]
 		],
 		"width": 380.0

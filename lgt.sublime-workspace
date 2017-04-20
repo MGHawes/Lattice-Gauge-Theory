@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"field",
+				"fieldidx"
+			],
+			[
 				"Watts",
 				"Watts-Strogatz	(Projectv5.tex)"
 			],
@@ -43,16 +47,8 @@
 			"file": "dataprocess.py",
 			"settings":
 			{
-				"buffer_size": 1730,
+				"buffer_size": 4001,
 				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Debug/lgt10101040001000.txt",
-			"settings":
-			{
-				"buffer_size": 3661,
-				"line_ending": "Windows"
 			}
 		}
 	],
@@ -97,6 +93,38 @@
 	},
 	"file_history":
 	[
+		"/C/Users/Matthew/git/beta2p2/282840/lgt28284020000100002p2.txt",
+		"/C/Users/Matthew/git/beta2p1/222236/lgt22223620000100002p1.txt",
+		"/C/Users/Matthew/git/beta2p1/222236/lgt22223620000100002.1x5.txt",
+		"/C/Users/Matthew/git/beta2p1/222236/lgt22223620000100002.1x4.txt",
+		"/C/Users/Matthew/git/beta2p1/222236/lgt22223620000100002.1x3.txt",
+		"/C/Users/Matthew/git/beta2p1/222236/lgt22223620000100002.1x2.txt",
+		"/C/Users/Matthew/git/beta2p1/222236/lgt22223620000100002.1x1.txt",
+		"/C/Users/Matthew/git/beta2p1/282840/lgt28284020000100002.1x5.txt",
+		"/C/Users/Matthew/git/beta2p1/282840/lgt28284020000100002.1x4.txt",
+		"/C/Users/Matthew/git/beta2p1/282840/lgt28284020000100002.1x3.txt",
+		"/C/Users/Matthew/git/beta2p1/282840/lgt28284020000100002.1x2.txt",
+		"/C/Users/Matthew/git/beta2p1/282840/lgt28284020000100002.1x1.txt",
+		"/C/Users/Matthew/git/beta2p1/282840/lgt28284020000100002p1.txt",
+		"/C/Users/Matthew/git/beta2p1/222236/lgt28284020000100002p1.txt",
+		"/C/Users/Matthew/git/beta2p1/222236/lgt28284020000100002.1x5.txt",
+		"/C/Users/Matthew/git/beta2p1/222236/lgt28284020000100002.1x4.txt",
+		"/C/Users/Matthew/git/beta2p1/222236/lgt28284020000100002.1x3.txt",
+		"/C/Users/Matthew/git/beta2p1/222236/lgt28284020000100002.1x2.txt",
+		"/C/Users/Matthew/git/beta2p1/222236/lgt28284020000100002.1x1.txt",
+		"/C/Users/Matthew/git/beta2p1/181824/lgt18182420000100002.1x1.txt",
+		"/C/Users/Matthew/git/beta2p1/181824/lgt18182420000100002.1x2.txt",
+		"/C/Users/Matthew/git/beta2p1/181824/lgt18182420000100002.1x3.txt",
+		"/C/Users/Matthew/git/beta2p1/181824/lgt18182420000100002.1x4.txt",
+		"/C/Users/Matthew/git/beta2p1/181824/lgt18182420000100002.1x5.txt",
+		"/C/Users/Matthew/git/beta2p3/181824/lgt18182420000100002.3x5.txt",
+		"/C/Users/Matthew/git/beta2p3/181824/lgt18182420000100002p3.txt",
+		"/C/Users/Matthew/git/beta2p2/181824/lgt18182420000100002.2x5.txt",
+		"/C/Users/Matthew/git/beta2p2/181824/lgt18182420000100002p2.txt",
+		"/C/Users/Matthew/git/beta2p0/181824/lgt18182420000100002x5.txt",
+		"/C/Users/Matthew/git/beta2p0/181824/lgt18182420000100002p0.txt",
+		"/C/Users/Matthew/git/lgt/Debug/lgt10101040001000.txt",
+		"/C/Users/Matthew/git/lgt/Debug/lgt18182420000100002p3.txt",
 		"/C/Users/Matthew/git/lgt/Debug/lgt28284040001000.txt",
 		"/C/Users/Matthew/git/lgt/dataprocess.py",
 		"/D/My Documents/Networks/Project/projectcompare.py",
@@ -154,6 +182,12 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"0.829578",
+			"0.829481",
+			"0.829463",
+			"0.829572",
+			"0.829381",
+			"0.829493",
 			"matme",
 			"reduce",
 			"reduced",
@@ -237,15 +271,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1730,
+						"buffer_size": 4001,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								73,
-								73
+								3599,
+								3599
 							]
 						],
 						"settings":
@@ -255,38 +289,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 990.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "Debug/lgt10101040001000.txt",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3661,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
 					"type": "text"
 				}
 			]

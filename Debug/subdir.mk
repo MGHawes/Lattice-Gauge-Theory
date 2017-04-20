@@ -11,6 +11,7 @@ CC_SRCS += \
 ../main.cc \
 ../phasesgen.cc \
 ../plaqclass.cc \
+../setup.cc \
 ../stapleclass.cc \
 ../wallclass.cc \
 ../wilsonwall.cc 
@@ -23,6 +24,7 @@ CC_DEPS += \
 ./main.d \
 ./phasesgen.d \
 ./plaqclass.d \
+./setup.d \
 ./stapleclass.d \
 ./wallclass.d \
 ./wilsonwall.d 
@@ -35,6 +37,7 @@ OBJS += \
 ./main.o \
 ./phasesgen.o \
 ./plaqclass.o \
+./setup.o \
 ./stapleclass.o \
 ./wallclass.o \
 ./wilsonwall.o 

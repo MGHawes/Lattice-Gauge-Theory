@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.1.17)  16 APR 2017 15:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.1.17)  20 APR 2017 17:42
 entering extended mode
 **./q4description.tex
 (q4description.tex
@@ -219,25 +219,86 @@ File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
 \Gin@req@height=\dimen116
 \Gin@req@width=\dimen117
 )
+("D:\Secondary Program Files\miktex\tex\latex\amsfonts\amsfonts.sty"
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)
+("D:\Secondary Program Files\miktex\tex\latex\amsfonts\amssymb.sty"
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+)
+("D:\Secondary Program Files\miktex\tex\latex\listings\listings.sty"
+\lst@mode=\count110
+\lst@gtempboxa=\box28
+\lst@token=\toks20
+\lst@length=\count111
+\lst@currlwidth=\dimen118
+\lst@column=\count112
+\lst@pos=\count113
+\lst@lostspace=\dimen119
+\lst@width=\dimen120
+\lst@newlines=\count114
+\lst@lineno=\count115
+\lst@maxwidth=\dimen121
+
+("D:\Secondary Program Files\miktex\tex\latex\listings\lstmisc.sty"
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+\c@lstnumber=\count116
+\lst@skipnumbers=\count117
+\lst@framebox=\box29
+)
+("D:\Secondary Program Files\miktex\tex\latex\listings\listings.cfg"
+File: listings.cfg 2015/06/04 1.6 listings configuration
+))
+Package: listings 2015/06/04 1.6 (Carsten Heinz)
+
+("D:\Secondary Program Files\miktex\tex\latex\xcolor\xcolor.sty"
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+
+("D:\Secondary Program Files\miktex\tex\latex\00miktex\color.cfg"
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+)
+("D:\Secondary Program Files\miktex\tex\latex\listings\lstlang1.sty"
+File: lstlang1.sty 2015/06/04 1.6 listings language file
+)
+("D:\Secondary Program Files\miktex\tex\latex\listings\lstlang1.sty"
+File: lstlang1.sty 2015/06/04 1.6 listings language file
+)
+("D:\Secondary Program Files\miktex\tex\latex\listings\lstmisc.sty"
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+)
 (q4description.aux)
 \openout1 = `q4description.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-\AtBeginShipoutBox=\box28
-Package hyperref Info: Link coloring OFF on input line 11.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+\AtBeginShipoutBox=\box30
+Package hyperref Info: Link coloring OFF on input line 26.
 
 ("D:\Secondary Program Files\miktex\tex\latex\hyperref\nameref.sty"
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -245,11 +306,11 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 ("D:\Secondary Program Files\miktex\tex\generic\oberdiek\gettitlestring.sty"
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count110
+\c@section@level=\count118
 )
-LaTeX Info: Redefining \ref on input line 11.
-LaTeX Info: Redefining \pageref on input line 11.
-LaTeX Info: Redefining \nameref on input line 11.
+LaTeX Info: Redefining \ref on input line 26.
+LaTeX Info: Redefining \pageref on input line 26.
+LaTeX Info: Redefining \nameref on input line 26.
 
 (q4description.out) (q4description.out)
 \@outlinefile=\write3
@@ -258,63 +319,172 @@ LaTeX Info: Redefining \nameref on input line 11.
 
 ("D:\Secondary Program Files\miktex\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count111
-\scratchdimen=\dimen118
-\scratchbox=\box29
-\nofMPsegments=\count112
-\nofMParguments=\count113
-\everyMPshowfont=\toks20
-\MPscratchCnt=\count114
-\MPscratchDim=\dimen119
-\MPnumerator=\count115
-\makeMPintoPDFobject=\count116
-\everyMPtoPDFconversion=\toks21
-) <latticeunpack.png, id=17, 357.58594pt x 307.1475pt>
-File: latticeunpack.png Graphic file (type png)
- <use latticeunpack.png>
-Package pdftex.def Info: latticeunpack.png used on input line 27.
-(pdftex.def)             Requested size: 234.00238pt x 200.99796pt.
+\scratchcounter=\count119
+\scratchdimen=\dimen122
+\scratchbox=\box31
+\nofMPsegments=\count120
+\nofMParguments=\count121
+\everyMPshowfont=\toks21
+\MPscratchCnt=\count122
+\MPscratchDim=\dimen123
+\MPnumerator=\count123
+\makeMPintoPDFobject=\count124
+\everyMPtoPDFconversion=\toks22
+)
+\c@lstlisting=\count125
+LaTeX Font Info:    Try loading font information for U+msa on input line 28.
+ ("D:\Secondary Program Files\miktex\tex\latex\amsfonts\umsa.fd"
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 28.
 
-[1
+("D:\Secondary Program Files\miktex\tex\latex\amsfonts\umsb.fd"
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) [1
 
 {C:/Users/Matthew/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 37.
+<latticeunpack.pdf, id=70, 423.6343pt x 345.91563pt>
+File: latticeunpack.pdf Graphic file (type pdf)
+ <use latticeunpack.pdf>
+Package pdftex.def Info: latticeunpack.pdf used on input line 62.
+(pdftex.def)             Requested size: 234.00238pt x 191.07231pt.
 
-[2 <./latticeunpack.png>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 37.
+[2 <./latticeunpack.pdf>]
+Overfull \hbox (5.05284pt too wide) in paragraph at lines 72--73
+[]\OT1/cmr/m/n/12 The uni-form dis-tri-bu-tion is re-quired for the main op-er-
+a-tion in the Metropo-
+ []
+
+[3] <plaq.pdf, id=108, 191.8474pt x 155.45956pt>
+File: plaq.pdf Graphic file (type pdf)
+ <use plaq.pdf>
+Package pdftex.def Info: plaq.pdf used on input line 95.
+(pdftex.def)             Requested size: 195.0pt x 158.0163pt.
+
+<staples.pdf, id=109, 242.7979pt x 184.24286pt>
+File: staples.pdf Graphic file (type pdf)
+ <use staples.pdf>
+Package pdftex.def Info: staples.pdf used on input line 101.
+(pdftex.def)             Requested size: 195.0pt x 147.9708pt.
+
+<latticeclass.pdf, id=112, 415.01993pt x 206.38335pt>
+File: latticeclass.pdf Graphic file (type pdf)
+ <use latticeclass.pdf>
+Package pdftex.def Info: latticeclass.pdf used on input line 111.
+(pdftex.def)             Requested size: 272.99881pt x 135.76309pt.
+
+[4 <./plaq.pdf>] [5 <./staples.pdf> <./latticeclass.pdf
+
+pdfTeX warning: pdflatex (file ./latticeclass.pdf): PDF inclusion: multiple pdf
+s with page group included in a single page
+>] <reimparts.pdf, id=132, 553.75253pt x 198.8552pt>
+File: reimparts.pdf Graphic file (type pdf)
+ <use reimparts.pdf>
+Package pdftex.def Info: reimparts.pdf used on input line 135.
+(pdftex.def)             Requested size: 312.00119pt x 112.04085pt.
+
+[6] <wallops.pdf, id=149, 1169.03278pt x 508.9573pt>
+File: wallops.pdf Graphic file (type pdf)
+ <use wallops.pdf>
+Package pdftex.def Info: wallops.pdf used on input line 171.
+(pdftex.def)             Requested size: 390.0pt x 169.79698pt.
+ [7 <./reimparts.pdf>] <wallclasses.pdf, id=160, 515.03647pt x 202.08156pt>
+File: wallclasses.pdf Graphic file (type pdf)
+
+<use wallclasses.pdf>
+Package pdftex.def Info: wallclasses.pdf used on input line 177.
+(pdftex.def)             Requested size: 312.00119pt x 122.4185pt.
+ [8 <./wallops.pdf> <./wallclasses.pdf
+
+pdfTeX warning: pdflatex (file ./wallclasses.pdf): PDF inclusion: multiple pdfs
+ with page group included in a single page
+>]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\@ifnextchar' on input line 184.
+
+<residuals.png, id=170, 433.62pt x 289.08pt>
+File: residuals.png Graphic file (type png)
+ <use residuals.png>
+Package pdftex.def Info: residuals.png used on input line 200.
+(pdftex.def)             Requested size: 234.00238pt x 156.00383pt.
+ [9]
+<m--fit.pdf, id=182, 825.0825pt x 577.15625pt>
+File: m--fit.pdf Graphic file (type pdf)
+ <use m--fit.pdf>
+Package pdftex.def Info: m--fit.pdf used on input line 218.
+(pdftex.def)             Requested size: 390.0pt x 272.81345pt.
+
+<m++fit.pdf, id=183, 825.0825pt x 577.15625pt>
+File: m++fit.pdf Graphic file (type pdf)
+ <use m++fit.pdf>
+Package pdftex.def Info: m++fit.pdf used on input line 221.
+(pdftex.def)             Requested size: 390.0pt x 272.81345pt.
+
+
+LaTeX Warning: Float too large for page by 19.79352pt on input line 225.
+
+[10 <./residuals.png>] [11 <./m--fit.pdf> <./m++fit.pdf
+
+pdfTeX warning: pdflatex (file ./m++fit.pdf): PDF inclusion: multiple pdfs with
+ page group included in a single page
+>]
+
+LaTeX Warning: Reference `eq:ng' on page 12 undefined on input line 279.
+
+[12] <stringtension.pdf, id=240, 683.55376pt x 939.51pt>
+File: stringtension.pdf Graphic file (type pdf)
+
+<use stringtension.pdf>
+Package pdftex.def Info: stringtension.pdf used on input line 296.
+(pdftex.def)             Requested size: 312.00119pt x 428.83961pt.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 310.
+ [13] [14 <./stringtension.pdf>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 310.
  (q4description.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 37.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 37.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 310.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 310.
 Package rerunfilecheck Info: File `q4description.out' has not changed.
-(rerunfilecheck)             Checksum: 1E929DA5DD519DCC853DA048D07EF22E;145.
+(rerunfilecheck)             Checksum: B0CE5F918F5711EDAE582DED342FF72F;894.
 
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 37.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 310.
  ) 
 Here is how much of TeX's memory you used:
- 5548 strings out of 493634
- 80110 string characters out of 3141308
- 164770 words of memory out of 3000000
- 8906 multiletter control sequences out of 15000+200000
- 11758 words of font info for 43 fonts, out of 3000000 for 9000
+ 7649 strings out of 493634
+ 108834 string characters out of 3141308
+ 229052 words of memory out of 3000000
+ 10899 multiletter control sequences out of 15000+200000
+ 15588 words of font info for 61 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 29i,6n,28p,798b,349s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 33i,13n,58p,844b,356s stack positions out of 5000i,500n,10000p,200000b,50000s
 <D:/Secondary Program Files/miktex/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
 <D:/Secondary Program Files/miktex/fonts/type1/public/amsfonts/cm/cmbx12.pfb><D
-:/Secondary Program Files/miktex/fonts/type1/public/amsfonts/cm/cmmi12.pfb><D:/
-Secondary Program Files/miktex/fonts/type1/public/amsfonts/cm/cmmi6.pfb><D:/Sec
-ondary Program Files/miktex/fonts/type1/public/amsfonts/cm/cmmi8.pfb><D:/Second
-ary Program Files/miktex/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/Secondary
- Program Files/miktex/fonts/type1/public/amsfonts/cm/cmr12.pfb><D:/Secondary Pr
-ogram Files/miktex/fonts/type1/public/amsfonts/cm/cmr17.pfb><D:/Secondary Progr
-am Files/miktex/fonts/type1/public/amsfonts/cm/cmti12.pfb><D:/Secondary Program
- Files/miktex/fonts/type1/public/amsfonts/cm/cmtt10.pfb><D:/Secondary Program F
-iles/miktex/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on q4description.pdf (2 pages, 147100 bytes).
+:/Secondary Program Files/miktex/fonts/type1/public/amsfonts/cm/cmex10.pfb><D:/
+Secondary Program Files/miktex/fonts/type1/public/amsfonts/cm/cmmi10.pfb><D:/Se
+condary Program Files/miktex/fonts/type1/public/amsfonts/cm/cmmi12.pfb><D:/Seco
+ndary Program Files/miktex/fonts/type1/public/amsfonts/cm/cmmi6.pfb><D:/Seconda
+ry Program Files/miktex/fonts/type1/public/amsfonts/cm/cmmi7.pfb><D:/Secondary 
+Program Files/miktex/fonts/type1/public/amsfonts/cm/cmmi8.pfb><D:/Secondary Pro
+gram Files/miktex/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/Secondary Progra
+m Files/miktex/fonts/type1/public/amsfonts/cm/cmr12.pfb><D:/Secondary Program F
+iles/miktex/fonts/type1/public/amsfonts/cm/cmr17.pfb><D:/Secondary Program File
+s/miktex/fonts/type1/public/amsfonts/cm/cmr6.pfb><D:/Secondary Program Files/mi
+ktex/fonts/type1/public/amsfonts/cm/cmr7.pfb><D:/Secondary Program Files/miktex
+/fonts/type1/public/amsfonts/cm/cmr8.pfb><D:/Secondary Program Files/miktex/fon
+ts/type1/public/amsfonts/cm/cmsy10.pfb><D:/Secondary Program Files/miktex/fonts
+/type1/public/amsfonts/cm/cmsy6.pfb><D:/Secondary Program Files/miktex/fonts/ty
+pe1/public/amsfonts/cm/cmsy7.pfb><D:/Secondary Program Files/miktex/fonts/type1
+/public/amsfonts/cm/cmsy8.pfb><D:/Secondary Program Files/miktex/fonts/type1/pu
+blic/amsfonts/cm/cmti12.pfb><D:/Secondary Program Files/miktex/fonts/type1/publ
+ic/amsfonts/cm/cmtt10.pfb><D:/Secondary Program Files/miktex/fonts/type1/public
+/amsfonts/cm/cmtt12.pfb><D:/Secondary Program Files/miktex/fonts/type1/public/a
+msfonts/symbols/msbm10.pfb>
+Output written on q4description.pdf (14 pages, 493954 bytes).
 PDF statistics:
- 80 PDF objects out of 1000 (max. 8388607)
- 7 named destinations out of 1000 (max. 500000)
- 30 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 361 PDF objects out of 1000 (max. 8388607)
+ 60 named destinations out of 1000 (max. 500000)
+ 152 words of extra memory for PDF output out of 10000 (max. 10000000)
 

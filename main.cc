@@ -25,13 +25,18 @@
   	twall twallarray[n_t];
   	wilsonwall wwallarray[n_t];
 
-int main(){
+int main(int argc, char* argv[]){
+
+	std::stringstream ss;
+	std::string s;
+	ss << argv[1];
+	ss >> s;
 
 	std::string fname;
 	std::stringstream fnamestream;
 	std::ofstream outfile;
 
-	fnamestream << "lgt"<< n_x << n_y << n_t << N_equilib << N_subseq<<beta<<".txt";
+	fnamestream << "lgt"<< n_x << n_y << n_t << N_equilib << N_subseq << beta << "x"<< s <<".txt";
 	fname = fnamestream.str();
 
 	outfile.open(fname);
@@ -136,7 +141,7 @@ int main(){
 //    double avgrewall[N_seq][n_t-1];			//store each t array in a particular sequence row
 //    double avgimwall[N_seq][n_t-1];
     equilibnow = time(0);
-	for (int k=1;k<=N_seq;k++){
+	for (int k=0;k<N_seq;k++){
 		//inside a single sequence of field configs
 		double avgplaqsum = 0;
 		double rewallseqavg[n_t];
@@ -242,22 +247,22 @@ int main(){
 		outfile<< avgplaqarray[k] << std::endl;
 
 		equilibafter = time(0);
-		double eta = double(equilibafter - equilibnow)*(N_seq-k)/double(60);
+		double eta = double(equilibafter - equilibnow)*(N_seq-k-1)/double(60);
 		equilibnow = time(0);
 		std::cout << "eta: "<< eta << " mins" <<std::endl;
 	}
 
-        double plaqavg = 0;
-        double plaqsquaremean = 0;
-        for (int k=1;k<=N_seq;k++){
-        	plaqavg += avgplaqarray[k];
-        	plaqsquaremean += avgplaqarray[k]*avgplaqarray[k];
-        }
-        plaqsquaremean = plaqsquaremean/N_seq;
-        plaqavg = plaqavg/N_seq;
-        double plaqsd = std::sqrt(plaqsquaremean - plaqavg*plaqavg);
+	double plaqavg = 0;
+	double plaqsquaremean = 0;
+	for (int l=0;l<N_seq;l++){
+		plaqavg += avgplaqarray[l];
+		plaqsquaremean += avgplaqarray[l]*avgplaqarray[l];
+	}
+	plaqsquaremean = plaqsquaremean/N_seq;
+	plaqavg = plaqavg/N_seq;
+	double plaqsd = std::sqrt(plaqsquaremean - plaqavg*plaqavg);
 
-        std::time_t after2 = time(0);
+	std::time_t after2 = time(0);
     std::cout <<"avgplaq:"<<plaqavg<<std::endl;
     std::cout <<"plaqsd:"<<plaqsd<<std::endl;
     std::cout <<"completed in:"<< after2 - now2 << std::endl;

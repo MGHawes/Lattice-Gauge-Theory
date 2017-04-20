@@ -6,10 +6,11 @@
  */
 #include "stapleclass.h"
 #include "indexing.h"
+#include <cstddef>
 
 staple::staple() {		//index passed by value
 	staple::dir = 0;
-	for (int i=0; i<=3; i++) {
+	for (int i=0; i<3; i++) {
 		staple::_links[i] = NULL;
 	}
 }
