@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.1.17)  20 APR 2017 17:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.1.17)  21 APR 2017 14:17
 entering extended mode
 **./q4description.tex
 (q4description.tex
@@ -229,25 +229,146 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 ("D:\Secondary Program Files\miktex\tex\latex\amsfonts\amssymb.sty"
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 )
+(minted.sty
+Package: minted 2017/02/10 v2.4.2dev Yet another Pygments shim for LaTeX
+ (fvextra.sty
+Package: fvextra 2016/09/02 v1.2.1 fvextra - extensions and patches for fancyvr
+b
+
+("D:\Secondary Program Files\miktex\tex\latex\base\ifthen.sty"
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+("D:\Secondary Program Files\miktex\tex\latex\etoolbox\etoolbox.sty"
+Package: etoolbox 2015/08/02 v2.2a e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count110
+)
+("D:\Secondary Program Files\miktex\tex\latex\fancyvrb\fancyvrb.sty"
+Package: fancyvrb 2008/02/07
+
+Style option: `fancyvrb' v2.7a, with DG/SPQR fixes, and firstline=lastline fix 
+<2008/02/07> (tvz)
+\FV@CodeLineNo=\count111
+\FV@InFile=\read1
+\FV@TabBox=\box28
+\c@FancyVerbLine=\count112
+\FV@StepNumber=\count113
+\FV@OutFile=\write3
+)
+("D:\Secondary Program Files\miktex\tex\latex\upquote\upquote.sty"
+Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verba
+tim
+)
+("D:\Secondary Program Files\miktex\tex\latex\lineno\lineno.sty"
+Package: lineno 2005/11/02 line numbers on paragraphs v4.41
+\linenopenalty=\count114
+\output=\toks20
+\linenoprevgraf=\count115
+\linenumbersep=\dimen118
+\linenumberwidth=\dimen119
+\c@linenumber=\count116
+\c@pagewiselinenumber=\count117
+\c@LN@truepage=\count118
+\c@internallinenumber=\count119
+\c@internallinenumbers=\count120
+\quotelinenumbersep=\dimen120
+\bframerule=\dimen121
+\bframesep=\dimen122
+\bframebox=\box29
+LaTeX Info: Redefining \\ on input line 3056.
+)
+\c@FV@TrueTabGroupLevel=\count121
+\c@FV@TrueTabCounter=\count122
+\FV@TabBox@Group=\box30
+\FV@TmpLength=\skip47
+\c@FV@HighlightLinesStart=\count123
+\c@FV@HighlightLinesStop=\count124
+\FV@BreakIndent=\dimen123
+\FV@BreakSymbolSepLeft=\dimen124
+\FV@BreakSymbolSepRight=\dimen125
+\FV@BreakSymbolIndentLeft=\dimen126
+\FV@BreakSymbolIndentRight=\dimen127
+\c@FancyVerbLineBreakLast=\count125
+\FV@LineBox=\box31
+\FV@LineIndentBox=\box32
+)
+("D:\Secondary Program Files\miktex\tex\latex\float\float.sty"
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count126
+\float@exts=\toks21
+\float@box=\box33
+\@float@everytoks=\toks22
+\@floatcapt=\box34
+)
+("D:\Secondary Program Files\miktex\tex\latex\tools\calc.sty"
+Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count127
+\calc@Bcount=\count128
+\calc@Adimen=\dimen128
+\calc@Bdimen=\dimen129
+\calc@Askip=\skip48
+\calc@Bskip=\skip49
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count129
+\calc@Cskip=\skip50
+)
+("D:\Secondary Program Files\MIKTEXbasic\tex\latex\tools\shellesc.sty"
+Package: shellesc 2016/06/07 v0.02a unified shell escape interface for LaTeX
+Package shellesc Info: Unrestricted shell escape enabled on input line 67.
+)
+("D:\Secondary Program Files\miktex\tex\latex\ifplatform\ifplatform.sty"
+Package: ifplatform 2010/10/22 v0.4 Testing for the operating system
+
+("D:\Secondary Program Files\miktex\tex\generic\oberdiek\catchfile.sty"
+Package: catchfile 2011/03/01 v1.6 Catch the contents of a file (HO)
+))
+("D:\Secondary Program Files\miktex\tex\latex\xstring\xstring.sty"
+("D:\Secondary Program Files\miktex\tex\generic\xstring\xstring.tex"
+\@xs@message=\write4
+\integerpart=\count130
+\decimalpart=\count131
+)
+Package: xstring 2013/10/13  v1.7c  String manipulations (C Tellechea)
+)
+("D:\Secondary Program Files\miktex\tex\latex\framed\framed.sty"
+Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
+\OuterFrameSep=\skip51
+\fb@frw=\dimen130
+\fb@frh=\dimen131
+\FrameRule=\dimen132
+\FrameSep=\dimen133
+)
+\minted@appexistsfile=\read2
+\minted@bgbox=\box35
+\minted@code=\write5
+\c@minted@FancyVerbLineTemp=\count132
+\c@minted@pygmentizecounter=\count133
+\@float@every@listing=\toks23
+\c@listing=\count134
+)
+runsystem(if not exist _minted-q4description mkdir _minted-q4description)...exe
+cuted.
+
+
 ("D:\Secondary Program Files\miktex\tex\latex\listings\listings.sty"
-\lst@mode=\count110
-\lst@gtempboxa=\box28
-\lst@token=\toks20
-\lst@length=\count111
-\lst@currlwidth=\dimen118
-\lst@column=\count112
-\lst@pos=\count113
-\lst@lostspace=\dimen119
-\lst@width=\dimen120
-\lst@newlines=\count114
-\lst@lineno=\count115
-\lst@maxwidth=\dimen121
+\lst@mode=\count135
+\lst@gtempboxa=\box36
+\lst@token=\toks24
+\lst@length=\count136
+\lst@currlwidth=\dimen134
+\lst@column=\count137
+\lst@pos=\count138
+\lst@lostspace=\dimen135
+\lst@width=\dimen136
+\lst@newlines=\count139
+\lst@lineno=\count140
+\lst@maxwidth=\dimen137
 
 ("D:\Secondary Program Files\miktex\tex\latex\listings\lstmisc.sty"
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
-\c@lstnumber=\count116
-\lst@skipnumbers=\count117
-\lst@framebox=\box29
+\c@lstnumber=\count141
+\lst@skipnumbers=\count142
+\lst@framebox=\box37
 )
 ("D:\Secondary Program Files\miktex\tex\latex\listings\listings.cfg"
 File: listings.cfg 2015/06/04 1.6 listings configuration
@@ -280,25 +401,31 @@ File: lstlang1.sty 2015/06/04 1.6 listings language file
 ("D:\Secondary Program Files\miktex\tex\latex\listings\lstmisc.sty"
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
 )
+runsystem(for ^%i in (pygmentize.exe pygmentize.bat pygmentize.cmd) do set > q4
+description.aex <nul: /p x=^%~$PATH:i>> q4description.aex)...executed.
+
+runsystem(del q4description.aex)...executed.
+
+
 (q4description.aux)
 \openout1 = `q4description.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-\AtBeginShipoutBox=\box30
-Package hyperref Info: Link coloring OFF on input line 26.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+\AtBeginShipoutBox=\box38
+Package hyperref Info: Link coloring OFF on input line 27.
 
 ("D:\Secondary Program Files\miktex\tex\latex\hyperref\nameref.sty"
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -306,160 +433,359 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 ("D:\Secondary Program Files\miktex\tex\generic\oberdiek\gettitlestring.sty"
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count118
+\c@section@level=\count143
 )
-LaTeX Info: Redefining \ref on input line 26.
-LaTeX Info: Redefining \pageref on input line 26.
-LaTeX Info: Redefining \nameref on input line 26.
+LaTeX Info: Redefining \ref on input line 27.
+LaTeX Info: Redefining \pageref on input line 27.
+LaTeX Info: Redefining \nameref on input line 27.
 
 (q4description.out) (q4description.out)
-\@outlinefile=\write3
-\openout3 = `q4description.out'.
+\@outlinefile=\write6
+\openout6 = `q4description.out'.
 
 
 ("D:\Secondary Program Files\miktex\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count119
-\scratchdimen=\dimen122
-\scratchbox=\box31
-\nofMPsegments=\count120
-\nofMParguments=\count121
-\everyMPshowfont=\toks21
-\MPscratchCnt=\count122
-\MPscratchDim=\dimen123
-\MPnumerator=\count123
-\makeMPintoPDFobject=\count124
-\everyMPtoPDFconversion=\toks22
+\scratchcounter=\count144
+\scratchdimen=\dimen138
+\scratchbox=\box39
+\nofMPsegments=\count145
+\nofMParguments=\count146
+\everyMPshowfont=\toks25
+\MPscratchCnt=\count147
+\MPscratchDim=\dimen139
+\MPnumerator=\count148
+\makeMPintoPDFobject=\count149
+\everyMPtoPDFconversion=\toks26
+) ("D:\Secondary Program Files\miktex\tex\latex\base\textcomp.sty"
+Package: textcomp 2005/09/27 v1.99g Standard LaTeX package
+Package textcomp Info: Sub-encoding information:
+(textcomp)               5 = only ISO-Adobe without \textcurrency
+(textcomp)               4 = 5 + \texteuro
+(textcomp)               3 = 4 + \textohm
+(textcomp)               2 = 3 + \textestimated + \textcurrency
+(textcomp)               1 = TS1 - \textcircled - \t
+(textcomp)               0 = TS1 (full)
+(textcomp)             Font families with sub-encoding setting implement
+(textcomp)             only a restricted character set as indicated.
+(textcomp)             Family '?' is the default used for unknown fonts.
+(textcomp)             See the documentation for details.
+Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 79.
+
+("D:\Secondary Program Files\miktex\tex\latex\base\ts1enc.def"
+File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
 )
-\c@lstlisting=\count125
-LaTeX Font Info:    Try loading font information for U+msa on input line 28.
- ("D:\Secondary Program Files\miktex\tex\latex\amsfonts\umsa.fd"
+LaTeX Info: Redefining \oldstylenums on input line 334.
+Package textcomp Info: Setting cmr sub-encoding to TS1/0 on input line 349.
+Package textcomp Info: Setting cmss sub-encoding to TS1/0 on input line 350.
+Package textcomp Info: Setting cmtt sub-encoding to TS1/0 on input line 351.
+Package textcomp Info: Setting cmvtt sub-encoding to TS1/0 on input line 352.
+Package textcomp Info: Setting cmbr sub-encoding to TS1/0 on input line 353.
+Package textcomp Info: Setting cmtl sub-encoding to TS1/0 on input line 354.
+Package textcomp Info: Setting ccr sub-encoding to TS1/0 on input line 355.
+Package textcomp Info: Setting ptm sub-encoding to TS1/4 on input line 356.
+Package textcomp Info: Setting pcr sub-encoding to TS1/4 on input line 357.
+Package textcomp Info: Setting phv sub-encoding to TS1/4 on input line 358.
+Package textcomp Info: Setting ppl sub-encoding to TS1/3 on input line 359.
+Package textcomp Info: Setting pag sub-encoding to TS1/4 on input line 360.
+Package textcomp Info: Setting pbk sub-encoding to TS1/4 on input line 361.
+Package textcomp Info: Setting pnc sub-encoding to TS1/4 on input line 362.
+Package textcomp Info: Setting pzc sub-encoding to TS1/4 on input line 363.
+Package textcomp Info: Setting bch sub-encoding to TS1/4 on input line 364.
+Package textcomp Info: Setting put sub-encoding to TS1/5 on input line 365.
+Package textcomp Info: Setting uag sub-encoding to TS1/5 on input line 366.
+Package textcomp Info: Setting ugq sub-encoding to TS1/5 on input line 367.
+Package textcomp Info: Setting ul8 sub-encoding to TS1/4 on input line 368.
+Package textcomp Info: Setting ul9 sub-encoding to TS1/4 on input line 369.
+Package textcomp Info: Setting augie sub-encoding to TS1/5 on input line 370.
+Package textcomp Info: Setting dayrom sub-encoding to TS1/3 on input line 371.
+Package textcomp Info: Setting dayroms sub-encoding to TS1/3 on input line 372.
+
+Package textcomp Info: Setting pxr sub-encoding to TS1/0 on input line 373.
+Package textcomp Info: Setting pxss sub-encoding to TS1/0 on input line 374.
+Package textcomp Info: Setting pxtt sub-encoding to TS1/0 on input line 375.
+Package textcomp Info: Setting txr sub-encoding to TS1/0 on input line 376.
+Package textcomp Info: Setting txss sub-encoding to TS1/0 on input line 377.
+Package textcomp Info: Setting txtt sub-encoding to TS1/0 on input line 378.
+Package textcomp Info: Setting lmr sub-encoding to TS1/0 on input line 379.
+Package textcomp Info: Setting lmdh sub-encoding to TS1/0 on input line 380.
+Package textcomp Info: Setting lmss sub-encoding to TS1/0 on input line 381.
+Package textcomp Info: Setting lmssq sub-encoding to TS1/0 on input line 382.
+Package textcomp Info: Setting lmvtt sub-encoding to TS1/0 on input line 383.
+Package textcomp Info: Setting lmtt sub-encoding to TS1/0 on input line 384.
+Package textcomp Info: Setting qhv sub-encoding to TS1/0 on input line 385.
+Package textcomp Info: Setting qag sub-encoding to TS1/0 on input line 386.
+Package textcomp Info: Setting qbk sub-encoding to TS1/0 on input line 387.
+Package textcomp Info: Setting qcr sub-encoding to TS1/0 on input line 388.
+Package textcomp Info: Setting qcs sub-encoding to TS1/0 on input line 389.
+Package textcomp Info: Setting qpl sub-encoding to TS1/0 on input line 390.
+Package textcomp Info: Setting qtm sub-encoding to TS1/0 on input line 391.
+Package textcomp Info: Setting qzc sub-encoding to TS1/0 on input line 392.
+Package textcomp Info: Setting qhvc sub-encoding to TS1/0 on input line 393.
+Package textcomp Info: Setting futs sub-encoding to TS1/4 on input line 394.
+Package textcomp Info: Setting futx sub-encoding to TS1/4 on input line 395.
+Package textcomp Info: Setting futj sub-encoding to TS1/4 on input line 396.
+Package textcomp Info: Setting hlh sub-encoding to TS1/3 on input line 397.
+Package textcomp Info: Setting hls sub-encoding to TS1/3 on input line 398.
+Package textcomp Info: Setting hlst sub-encoding to TS1/3 on input line 399.
+Package textcomp Info: Setting hlct sub-encoding to TS1/5 on input line 400.
+Package textcomp Info: Setting hlx sub-encoding to TS1/5 on input line 401.
+Package textcomp Info: Setting hlce sub-encoding to TS1/5 on input line 402.
+Package textcomp Info: Setting hlcn sub-encoding to TS1/5 on input line 403.
+Package textcomp Info: Setting hlcw sub-encoding to TS1/5 on input line 404.
+Package textcomp Info: Setting hlcf sub-encoding to TS1/5 on input line 405.
+Package textcomp Info: Setting pplx sub-encoding to TS1/3 on input line 406.
+Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 407.
+Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 408.
+Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
+)
+\c@lstlisting=\count150
+LaTeX Font Info:    Try loading font information for U+msa on input line 29.
+
+("D:\Secondary Program Files\miktex\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 28.
+LaTeX Font Info:    Try loading font information for U+msb on input line 29.
 
 ("D:\Secondary Program Files\miktex\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
 {C:/Users/Matthew/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-<latticeunpack.pdf, id=70, 423.6343pt x 345.91563pt>
+<latticeunpack.pdf, id=62, 423.6343pt x 345.91563pt>
 File: latticeunpack.pdf Graphic file (type pdf)
  <use latticeunpack.pdf>
-Package pdftex.def Info: latticeunpack.pdf used on input line 62.
+Package pdftex.def Info: latticeunpack.pdf used on input line 63.
 (pdftex.def)             Requested size: 234.00238pt x 191.07231pt.
 
-[2 <./latticeunpack.pdf>]
-Overfull \hbox (5.05284pt too wide) in paragraph at lines 72--73
+[2pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) 
+has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.70 
+      <./latticeunpack.pdf>]
+Overfull \hbox (5.05284pt too wide) in paragraph at lines 73--74
 []\OT1/cmr/m/n/12 The uni-form dis-tri-bu-tion is re-quired for the main op-er-
 a-tion in the Metropo-
  []
 
-[3] <plaq.pdf, id=108, 191.8474pt x 155.45956pt>
+[3] <plaq.pdf, id=100, 191.8474pt x 155.45956pt>
 File: plaq.pdf Graphic file (type pdf)
  <use plaq.pdf>
-Package pdftex.def Info: plaq.pdf used on input line 95.
+Package pdftex.def Info: plaq.pdf used on input line 96.
 (pdftex.def)             Requested size: 195.0pt x 158.0163pt.
 
-<staples.pdf, id=109, 242.7979pt x 184.24286pt>
+<staples.pdf, id=101, 242.7979pt x 184.24286pt>
 File: staples.pdf Graphic file (type pdf)
  <use staples.pdf>
-Package pdftex.def Info: staples.pdf used on input line 101.
+Package pdftex.def Info: staples.pdf used on input line 102.
 (pdftex.def)             Requested size: 195.0pt x 147.9708pt.
 
-<latticeclass.pdf, id=112, 415.01993pt x 206.38335pt>
+<latticeclass.pdf, id=104, 415.01993pt x 206.38335pt>
 File: latticeclass.pdf Graphic file (type pdf)
  <use latticeclass.pdf>
-Package pdftex.def Info: latticeclass.pdf used on input line 111.
+Package pdftex.def Info: latticeclass.pdf used on input line 112.
 (pdftex.def)             Requested size: 272.99881pt x 135.76309pt.
 
-[4 <./plaq.pdf>] [5 <./staples.pdf> <./latticeclass.pdf
+[4pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) 
+has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.114 \end{figure}
+                   <./plaq.pdf>] [5pdfTeX warning (ext4): destination with the 
+same identifier (name{figure.3}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.122 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+4}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.122 
+       <./staples.pdf> <./latticeclass.pdf
 
 pdfTeX warning: pdflatex (file ./latticeclass.pdf): PDF inclusion: multiple pdf
 s with page group included in a single page
->] <reimparts.pdf, id=132, 553.75253pt x 198.8552pt>
+>] <reimparts.pdf, id=124, 553.75253pt x 198.8552pt>
 File: reimparts.pdf Graphic file (type pdf)
  <use reimparts.pdf>
-Package pdftex.def Info: reimparts.pdf used on input line 135.
+Package pdftex.def Info: reimparts.pdf used on input line 136.
 (pdftex.def)             Requested size: 312.00119pt x 112.04085pt.
 
-[6] <wallops.pdf, id=149, 1169.03278pt x 508.9573pt>
+<wallops.pdf, id=127, 1169.03278pt x 508.9573pt>
 File: wallops.pdf Graphic file (type pdf)
  <use wallops.pdf>
-Package pdftex.def Info: wallops.pdf used on input line 171.
+Package pdftex.def Info: wallops.pdf used on input line 146.
 (pdftex.def)             Requested size: 390.0pt x 169.79698pt.
- [7 <./reimparts.pdf>] <wallclasses.pdf, id=160, 515.03647pt x 202.08156pt>
-File: wallclasses.pdf Graphic file (type pdf)
 
-<use wallclasses.pdf>
-Package pdftex.def Info: wallclasses.pdf used on input line 177.
+<wallclasses.pdf, id=128, 515.03647pt x 202.08156pt>
+File: wallclasses.pdf Graphic file (type pdf)
+ <use wallclasses.pdf>
+Package pdftex.def Info: wallclasses.pdf used on input line 152.
 (pdftex.def)             Requested size: 312.00119pt x 122.4185pt.
- [8 <./wallops.pdf> <./wallclasses.pdf
+
+[6] [7pdfTeX warning (ext4): destination with the same identifier (name{figure.
+5}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.160 \end{align}
+                 pdfTeX warning (ext4): destination with the same identifier (n
+ame{figure.6}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.160 \end{align}
+                 pdfTeX warning (ext4): destination with the same identifier (n
+ame{figure.7}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.160 \end{align}
+                  <./reimparts.pdf> <./wallops.pdf
+
+pdfTeX warning: pdflatex (file ./wallops.pdf): PDF inclusion: multiple pdfs wit
+h page group included in a single page
+> <./wallclasses.pdf
 
 pdfTeX warning: pdflatex (file ./wallclasses.pdf): PDF inclusion: multiple pdfs
  with page group included in a single page
 >]
+\openout3 = `q4description.pyg'.
+
+ (_minted-q4description/default-pyg-prefix.pygstyle)
+(_minted-q4description/default.pygstyle)
+(_minted-q4description/30726840EAE8BDCD36CE89C601D27C7CF7F56EC73D05E3EFE3D463B7
+74585481.pygtex
+LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <12> not available
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 2.
+ [8])
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Overfull \hbox (29.09976pt too wide) in paragraph at lines 206--207
+[]\OT1/cmr/m/n/12 Putting this all to-gether means that the to-tal run-time for
+ all $\OML/cmm/m/it/12  \OT1/cmr/m/n/12 = 2\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 0
+\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 1\OML/cmm
+/m/it/12 ; \OT1/cmr/m/n/12 2\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 2\OML/cmm/m/it/12
+ ; \OT1/cmr/m/n/12 2\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 3$
+ []
+
+[9]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@ifnextchar' on input line 184.
+(hyperref)                removing `\@ifnextchar' on input line 213.
 
-<residuals.png, id=170, 433.62pt x 289.08pt>
+[10pdfTeX warning (ext4): destination with the same identifier (name{table.1}) 
+has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.221 \par W
+            hen sampling from a Gaussian distribution with unknown standard ...
+] <residuals.png, id=174, 433.62pt x 289.08pt>
 File: residuals.png Graphic file (type png)
  <use residuals.png>
-Package pdftex.def Info: residuals.png used on input line 200.
+Package pdftex.def Info: residuals.png used on input line 229.
 (pdftex.def)             Requested size: 234.00238pt x 156.00383pt.
- [9]
-<m--fit.pdf, id=182, 825.0825pt x 577.15625pt>
+ [11pdfTeX warning (ext4): destination with the same identifier (name{figure.8}
+) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.238 
+       <./residuals.png>] <m--fit.pdf, id=184, 825.0825pt x 577.15625pt>
 File: m--fit.pdf Graphic file (type pdf)
- <use m--fit.pdf>
-Package pdftex.def Info: m--fit.pdf used on input line 218.
-(pdftex.def)             Requested size: 390.0pt x 272.81345pt.
 
-<m++fit.pdf, id=183, 825.0825pt x 577.15625pt>
+<use m--fit.pdf>
+Package pdftex.def Info: m--fit.pdf used on input line 247.
+(pdftex.def)             Requested size: 390.0pt x 272.81345pt.
+ <m++fit.pdf, id=185, 825.0825pt x 577.15625pt>
 File: m++fit.pdf Graphic file (type pdf)
- <use m++fit.pdf>
-Package pdftex.def Info: m++fit.pdf used on input line 221.
+
+<use m++fit.pdf>
+Package pdftex.def Info: m++fit.pdf used on input line 250.
 (pdftex.def)             Requested size: 390.0pt x 272.81345pt.
 
 
-LaTeX Warning: Float too large for page by 19.79352pt on input line 225.
+LaTeX Warning: Float too large for page by 25.9602pt on input line 254.
 
-[10 <./residuals.png>] [11 <./m--fit.pdf> <./m++fit.pdf
+<stringtension.pdf, id=192, 683.55376pt x 939.51pt>
+File: stringtension.pdf Graphic file (type pdf)
+ <use stringtension.pdf>
+Package pdftex.def Info: stringtension.pdf used on input line 327.
+(pdftex.def)             Requested size: 312.00119pt x 428.83961pt.
+
+<massesdepen.pdf, id=196, 825.0825pt x 577.15625pt>
+File: massesdepen.pdf Graphic file (type pdf)
+ <use massesdepen.pdf>
+Package pdftex.def Info: massesdepen.pdf used on input line 335.
+(pdftex.def)             Requested size: 390.0pt x 272.81345pt.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 339.
+
+[12] [13pdfTeX warning (ext4): destination with the same identifier (name{figur
+e.9}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.339 \end{document}
+                     <./m--fit.pdf> <./m++fit.pdf
 
 pdfTeX warning: pdflatex (file ./m++fit.pdf): PDF inclusion: multiple pdfs with
  page group included in a single page
->]
+>] [14pdfTeX warning (ext4): destination with the same identifier (name{table.2
+}) has been already used, duplicate ignored
 
-LaTeX Warning: Reference `eq:ng' on page 12 undefined on input line 279.
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.339 \end{document}
+                    pdfTeX warning (ext4): destination with the same identifier
+ (name{table.3}) has been already used, duplicate ignored
 
-[12] <stringtension.pdf, id=240, 683.55376pt x 939.51pt>
-File: stringtension.pdf Graphic file (type pdf)
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.339 \end{document}
+                    ] [15pdfTeX warning (ext4): destination with the same ident
+ifier (name{figure.10}) has been already used, duplicate ignored
 
-<use stringtension.pdf>
-Package pdftex.def Info: stringtension.pdf used on input line 296.
-(pdftex.def)             Requested size: 312.00119pt x 428.83961pt.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 310.
- [13] [14 <./stringtension.pdf>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 310.
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.339 \end{document}
+                     <./stringtension.pdf>] [16pdfTeX warning (ext4): destinati
+on with the same identifier (name{figure.11}) has been already used, duplicate 
+ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.339 \end{document}
+                     <./massesdepen.pdf>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 339.
  (q4description.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 310.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 310.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 339.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 339.
 Package rerunfilecheck Info: File `q4description.out' has not changed.
-(rerunfilecheck)             Checksum: B0CE5F918F5711EDAE582DED342FF72F;894.
+(rerunfilecheck)             Checksum: C48538BE74B826D3132B6409F52D5B18;734.
 
 
-LaTeX Warning: There were undefined references.
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 310.
+runsystem(del q4description.pyg)...executed.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 339.
  ) 
 Here is how much of TeX's memory you used:
- 7649 strings out of 493634
- 108834 string characters out of 3141308
- 229052 words of memory out of 3000000
- 10899 multiletter control sequences out of 15000+200000
- 15588 words of font info for 61 fonts, out of 3000000 for 9000
+ 10939 strings out of 493634
+ 171597 string characters out of 3141308
+ 333938 words of memory out of 3000000
+ 14110 multiletter control sequences out of 15000+200000
+ 15281 words of font info for 60 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 33i,13n,58p,844b,356s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 33i,13n,58p,945b,543s stack positions out of 5000i,500n,10000p,200000b,50000s
 <D:/Secondary Program Files/miktex/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
 <D:/Secondary Program Files/miktex/fonts/type1/public/amsfonts/cm/cmbx12.pfb><D
 :/Secondary Program Files/miktex/fonts/type1/public/amsfonts/cm/cmex10.pfb><D:/
@@ -482,9 +808,9 @@ blic/amsfonts/cm/cmti12.pfb><D:/Secondary Program Files/miktex/fonts/type1/publ
 ic/amsfonts/cm/cmtt10.pfb><D:/Secondary Program Files/miktex/fonts/type1/public
 /amsfonts/cm/cmtt12.pfb><D:/Secondary Program Files/miktex/fonts/type1/public/a
 msfonts/symbols/msbm10.pfb>
-Output written on q4description.pdf (14 pages, 493954 bytes).
+Output written on q4description.pdf (16 pages, 522043 bytes).
 PDF statistics:
- 361 PDF objects out of 1000 (max. 8388607)
- 60 named destinations out of 1000 (max. 500000)
- 152 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 404 PDF objects out of 1000 (max. 8388607)
+ 62 named destinations out of 1000 (max. 500000)
+ 141 words of extra memory for PDF output out of 10000 (max. 10000000)
 

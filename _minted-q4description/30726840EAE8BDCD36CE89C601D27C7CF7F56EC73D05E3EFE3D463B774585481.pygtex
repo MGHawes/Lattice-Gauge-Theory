@@ -1,0 +1,15 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{for} \PYG{n}{seq\PYGZus{}no} \PYG{o+ow}{in} \PYG{n+nb}{range}\PYG{p}{(}\PYG{n}{N\PYGZus{}sequences}\PYG{p}{):}
+    \PYG{n}{correlatoravg} \PYG{o}{=} \PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{o}{*}\PYG{n}{n\PYGZus{}t}
+    \PYG{n}{acceptances} \PYG{o}{=} \PYG{l+m+mi}{0}
+    \PYG{k}{for} \PYG{n}{fieldconfig} \PYG{o+ow}{in} \PYG{n+nb}{range}\PYG{p}{(}\PYG{n}{N\PYGZus{}configs}\PYG{p}{):}
+        \PYG{k}{for} \PYG{n}{link} \PYG{o+ow}{in} \PYG{n+nb}{range}\PYG{p}{(}\PYG{n}{N\PYGZus{}lattice}\PYG{p}{):}
+            \PYG{n}{acceptances} \PYG{o}{+=} \PYG{n}{lattice}\PYG{p}{[}\PYG{n}{link}\PYG{p}{]}\PYG{o}{.}\PYG{n}{update}\PYG{p}{()}
+        \PYG{k}{for} \PYG{n}{T} \PYG{o+ow}{in} \PYG{n+nb}{range}\PYG{p}{(}\PYG{n}{n\PYGZus{}t}\PYG{p}{):}
+            \PYG{n}{phi\PYGZus{}T} \PYG{o}{=} \PYG{n}{twallarray}\PYG{p}{[}\PYG{n}{T}\PYG{p}{]}\PYG{o}{.}\PYG{n}{getvalue}\PYG{p}{()}
+            \PYG{k}{for} \PYG{n}{t} \PYG{o+ow}{in} \PYG{n+nb}{range}\PYG{p}{(}\PYG{n}{n\PYGZus{}t}\PYG{p}{):}
+                \PYG{n}{phi\PYGZus{}tplusT} \PYG{o}{=} \PYG{n}{twallarray}\PYG{p}{[(}\PYG{n}{t}\PYG{o}{+}\PYG{n}{T}\PYG{p}{)}\PYG{o}{\PYGZpc{}}\PYG{n}{n\PYGZus{}t}\PYG{p}{]}\PYG{o}{.}\PYG{n}{getvalue}\PYG{p}{()}
+                \PYG{n}{correlatoravg}\PYG{p}{[}\PYG{n}{t}\PYG{p}{]} \PYG{o}{+=} \PYG{n}{phi\PYGZus{}tplusT}\PYG{o}{*}\PYG{n}{phi\PYGZus{}T}
+        \PYG{n}{correlatoravg} \PYG{o}{=} \PYG{n}{correlatoravg}\PYG{o}{/}\PYG{n}{N\PYGZus{}mes}
+        \PYG{k}{print}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}seq\PYGZsq{}}\PYG{o}{+}\PYG{n}{seq\PYGZus{}n}\PYG{o}{+}\PYG{l+s+s1}{\PYGZsq{}=\PYGZsq{}}\PYG{n}{correlatoravg}\PYG{p}{)}
+\end{Verbatim}

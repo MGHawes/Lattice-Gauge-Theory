@@ -28,20 +28,21 @@
 int main(int argc, char* argv[]){
 
 	std::stringstream ss;
-	std::string s;
+	std::string runNo;
 	ss << argv[1];
-	ss >> s;
+	ss >> runNo;
 
 	std::string fname;
 	std::stringstream fnamestream;
 	std::ofstream outfile;
 
-	fnamestream << "lgt"<< n_x << n_y << n_t << N_equilib << N_subseq << beta << "x"<< s <<".txt";
+	fnamestream << "lgt"<< n_x << n_y << n_t << N_equilib << N_subseq << beta << "x"<< runNo <<".txt";
 	fname = fnamestream.str();
 
 	outfile.open(fname);
 
-	std::time_t now = time(0);
+	std::time_t starttime = time(0);
+
   	for (int i=0; i<n; i++){
   	  		latticedata[i] = 1;
   	  	}
@@ -90,10 +91,10 @@ int main(int argc, char* argv[]){
 
     double phases[2*N_v+1];		//pairs plus the identity
 	phases[0] = 0;				//identity
-    for (int i=0, j=1;i<N_v;i++){		//iter through N_v times
+    for (int i=0, j=1;i<N_v;i++){		
     	double g = gaussian(gaussgen);
-    	phases[j++] = g;				//add the two pairs of phases
-    	phases[j++] = -g;				//add the two pairs of phases
+    	phases[j++] = g;
+    	phases[j++] = -g;
     }
 
 
@@ -128,20 +129,21 @@ int main(int argc, char* argv[]){
 		}
     }
 
-    std::time_t after = time(0);
+    std::time_t endequilib = time(0);
 
-    std::cout <<"Equilibriated:"<< after - now << std::endl;
-    outfile <<"Equilibriated:"<< after - now << std::endl;
-    double eta = (after - now)*(N_subseq*N_seq)/(N_equilib*60);
+    std::cout <<"Equilibriated:"<< endequilib - starttime << std::endl;
+    outfile <<"Equilibriated:"<< endequilib - starttime << std::endl;
+    double eta = (endequilib - starttime)*(N_subseq*N_seq)/(N_equilib*60);
     std::cout <<"eta: "<< eta << " mins" <<std::endl;
-    std::time_t now2 = time(0);
+
+    std::time_t startsims = time(0);
 
 
     double avgplaqarray[N_seq];
 //    double avgrewall[N_seq][n_t-1];			//store each t array in a particular sequence row
 //    double avgimwall[N_seq][n_t-1];
     equilibnow = time(0);
-	for (int k=0;k<N_seq;k++){
+	for (int seq_no=0;seq_no<N_seq;seq_no++){
 		//inside a single sequence of field configs
 		double avgplaqsum = 0;
 		double rewallseqavg[n_t];
@@ -153,7 +155,7 @@ int main(int argc, char* argv[]){
 		std::fill_n(imwallseqavg, n_t, 0);
 		std::fill_n(wwallseqavg, n_t, 0);
 
-		for (int j=1;j<=N_subseq;j++){
+		for (int config_no=1;config_no<=N_subseq;config_no++){
 		//inside a single field config
 
 			double sumplaq = 0;
@@ -161,14 +163,14 @@ int main(int argc, char* argv[]){
 
 
 			//----------update links--------------
-			for(int i=0;i<n;i++) {
-				acceptances += lattice[i].update(phases[intdistr(intgen)],uniformdistr(ugen));
+			for(int site=0;site<n;site++) {
+				acceptances += lattice[site].update(phases[intdistr(intgen)],uniformdistr(ugen));
 				tries += 1;
 			}
 
 			//----------do operations-------------
-			for(int i=0;i<n;i++) {
-				sumplaq += lattice[i].getplaqsum();			//add to total sum the sum of plaqs surrounding this link
+			for(int site=0;site<n;site++) {
+				sumplaq += lattice[site].getplaqsum();			//add to total sum the sum of plaqs surrounding this link
 			}
 
 			;
@@ -207,9 +209,9 @@ int main(int argc, char* argv[]){
 			wwallseqavg[i] = wwallseqavg[i]/(N_subseq*n_t);
 		}
 
-		std::cout<<"m_0++ seq"<<k<<":";
+		std::cout<<"m_0++ seq"<<seq_no<<":";
 		std::cout<< std::endl;
-		outfile<<"m_0++ seq"<<k<<":";
+		outfile<<"m_0++ seq"<<seq_no<<":";
 		outfile<< std::endl;
 		for(int i=0;i<n_t;i++){
 			std::cout << rewallseqavg[i]<<", ";
@@ -218,9 +220,9 @@ int main(int argc, char* argv[]){
 		std::cout<< std::endl;
 		outfile<< std::endl;
 
-		std::cout<<"m_0-- seq"<<k<<":";
+		std::cout<<"m_0-- seq"<<seq_no<<":";
 		std::cout<< std::endl;
-		outfile<<"m_0-- seq"<<k<<":";
+		outfile<<"m_0-- seq"<<seq_no<<":";
 		outfile<< std::endl;
 		for(int i=0;i<n_t;i++){
 			std::cout << imwallseqavg[i]<<", ";
@@ -229,9 +231,9 @@ int main(int argc, char* argv[]){
 		outfile<< std::endl;
 		std::cout << std::endl;
 
-		std::cout<<"wilson seq"<<k<<":";
+		std::cout<<"wilson seq"<<seq_no<<":";
 		std::cout<< std::endl;
-		outfile<<"wilson seq"<<k<<":";
+		outfile<<"wilson seq"<<seq_no<<":";
 		outfile<< std::endl;
 		for(int i=0;i<n_t;i++){
 			std::cout << wwallseqavg[i]<<", ";
@@ -240,14 +242,14 @@ int main(int argc, char* argv[]){
 		outfile<< std::endl;
 		std::cout << std::endl;
 
-		avgplaqarray[k] = avgplaqsum/N_subseq;
-		std::cout<<"Plaqavg:" << avgplaqarray[k] << std::endl;
+		avgplaqarray[seq_no] = avgplaqsum/N_subseq;
+		std::cout<<"Plaqavg:" << avgplaqarray[seq_no] << std::endl;
 		std::cout << "Acceptances: "<<acceptances<<"/"<<tries<< std::endl;
 		outfile<<"Plaqavg:" <<std::endl;
-		outfile<< avgplaqarray[k] << std::endl;
+		outfile<< avgplaqarray[seq_no] << std::endl;
 
 		equilibafter = time(0);
-		double eta = double(equilibafter - equilibnow)*(N_seq-k-1)/double(60);
+		double eta = double(equilibafter - equilibnow)*(N_seq-seq_no-1)/double(60);
 		equilibnow = time(0);
 		std::cout << "eta: "<< eta << " mins" <<std::endl;
 	}
@@ -265,11 +267,11 @@ int main(int argc, char* argv[]){
 	std::time_t after2 = time(0);
     std::cout <<"avgplaq:"<<plaqavg<<std::endl;
     std::cout <<"plaqsd:"<<plaqsd<<std::endl;
-    std::cout <<"completed in:"<< after2 - now2 << std::endl;
+    std::cout <<"completed in:"<< after2 - startsims << std::endl;
 
    	outfile <<"avgplaq:"<<plaqavg<<std::endl;
    	outfile <<"plaqsd:"<<plaqsd<<std::endl;
-   	outfile <<"completed in:"<< after2 - now2 << std::endl;
+   	outfile <<"completed in:"<< after2 - startsims << std::endl;
    	outfile.close();
   	}
 

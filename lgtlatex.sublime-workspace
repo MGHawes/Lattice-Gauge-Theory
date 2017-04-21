@@ -43,7 +43,7 @@
 			"file": "q4description.tex",
 			"settings":
 			{
-				"buffer_size": 20760,
+				"buffer_size": 21981,
 				"line_ending": "Windows"
 			}
 		}
@@ -263,15 +263,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 20760,
+						"buffer_size": 21981,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								19733,
-								19733
+								21981,
+								21981
 							]
 						],
 						"settings":
@@ -281,7 +281,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 4515.0,
+						"translation.y": 2558.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
